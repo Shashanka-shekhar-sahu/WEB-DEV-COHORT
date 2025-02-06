@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box</title>
+    <style>
+        .content-01{
+            height: 100px;
+            width: 150px;
+            border: 10px solid red;
+            padding: 20px;
+              /*content area = content area + padding + height + width */
+        }
+        
+        /* border-box  */
+        .content-02{
+            box-sizing: border-box;
+            height: 100px;
+            width: 150px;
+            border: 10px solid red;
+            padding: 20px;
+              /*content area = all are included in content size  */
+        }
+      
+    </style>
+   
+</head>
+<body>
+    <div class="content-01">Content 01</div>
+    <br><br><br>
+
+    <div class="content-02">Contact 02</div>
+</body>
+</html>
