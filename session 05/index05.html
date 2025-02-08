@@ -1,40 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>units (px,%)</title>
+    <title>Units (vh,vw)</title>
     <style>
+        /* vh(viewport height), 
+            vw(viewport width) */
         #paragraph {
             border: 1px solid black;
             font-size: 10px;
-            width: 80%;
+            width: 80vh;
+            height: 50vh;
         }
-
         p {
-            border: 1px solid black;
+           
             font-size: 30px;
-            width: 80%;
-            height: 50px;
         }
-
         #p4 {
-            border: 1px solid black;
             font-size: 10px;
         }
     </style>
 </head>
-
 <body>
-    <!-- 2 types
-            absolute px ,
-            relative(deal with parent element) % , 
-            em(deals with parent element, relative to the font-size of the element) , 
-            rem(relative to the font-size of the element) , 
-            vh(viewport height), 
-            vw(viewport width) 
-     -->
     <div id="paragraph">
         <p>paragraph01</p>
         <p>paragraph02</p>
@@ -44,6 +32,6 @@
         <p id="p4">paragraph 04</p>
     </div>
 
+    
 </body>
-
 </html>
