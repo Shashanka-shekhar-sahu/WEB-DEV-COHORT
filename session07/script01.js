@@ -7,8 +7,12 @@ let age = 24
 let isPaid = true
 //null
 let favouriteClasss = null
-//object
-let skills = ["html","css",`javascript`]
+//array
+let skills = ["html","css",`javascript`] //value = 2((index,position) 0,1,2), .length = 3(1,2,3)
+console.log(skills[2])
+skills[0] = java
+console.log(skills.length)
+
 //undefine
 let homeTown
 //object
