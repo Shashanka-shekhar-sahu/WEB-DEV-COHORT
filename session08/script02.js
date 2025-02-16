@@ -7,6 +7,7 @@ const person = {
     isMarried :false,
     getFullName : function(){
         return 'shashank shekhar sahu'
+        
     },
     address : {
         homeNumber : 123,
