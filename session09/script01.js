@@ -1,16 +1,3 @@
-// Function.prototype.describe = function(){
-//     console.log('Function name is ${this.name}')
-// }
-
-// function greet(name){
-//     return 'Hello ${name}'
-// }
-
-// greet.describe()
-
-
-
-
 //Question & Answer
 // 01. Create an object representing a type of tea with properties for name, type and caffeine content.
 const teas = {
