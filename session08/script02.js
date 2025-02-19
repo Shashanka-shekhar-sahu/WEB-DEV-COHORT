@@ -1,4 +1,5 @@
 // object
+// object have Properties (color, weight) and Method (actions, functions)
 const person = {
     firstName :'shashank',
     middleName :'shekhar',
