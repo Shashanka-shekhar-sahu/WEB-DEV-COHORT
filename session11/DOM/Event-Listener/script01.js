@@ -95,6 +95,40 @@ const increse = document.getElementById('plus'),
              }
 
              })
+
+            // Example 05
+
+            let displayLikes=document.querySelector('#likes-display');
+        let displayDisLikes=document.querySelector('#dislikes-display');
+        let displayTotal=document.querySelector('#total-display');
+        let likesBtn=document.querySelector('#likes-btn');
+        let dislikesBtn=document.querySelector('#dislikes-btn');
+
+        let likes=0;
+        let disLikes=0;
+        let total=0;
+
+        displayLikes.innerText=likes;
+        displayDisLikes.innerText=disLikes;
+        displayTotal.innerText=total;
+
+        likesBtn.addEventListener('click',likesDisplay);
+        dislikesBtn.addEventListener('click',dislikesDisplay);
+
+        function likesDisplay()
+        {
+            likes++;
+            total++;
+            displayLikes.innerText=likes;
+            displayTotal.innerText=total;
+        }
+        function dislikesDisplay()
+        {
+            disLikes++;
+            total++;
+            displayDisLikes.innerText=disLikes;
+            displayTotal.innerText=total;
+        }
              
 
 
