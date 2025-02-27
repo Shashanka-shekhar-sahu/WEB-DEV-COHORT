@@ -68,3 +68,6 @@ function greet(name) {
   //to change the context
   person3.greet.call({personsName: "Sourav"})
 
+//callback function
+//syntex
+//() =>
