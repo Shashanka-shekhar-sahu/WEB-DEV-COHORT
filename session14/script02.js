@@ -1,6 +1,10 @@
   //promise
   // all primise are use (micro task queqe)
   // for best visualization go to https://www.jsv9000.app/
+  // promise have 3 states(1.pending , 2.fulfilled , 3.rejected)
+  // promise have 3 function(1.then() {when promise fullfill that time then() called}, 
+  // 2.catch() {when promise accepted that time catch() called},
+  //  3.finally(){when promise settled that time finally()called, every time called})
   
   //Example 01
   console.log(`Hi`)

@@ -11,12 +11,24 @@ function negativeIndex(arr){
                    return target[target.length + index]
                }
                return target[index]
+            },
+            set(target, prop, value) {
+                const index =  Number(prop)
+                if(index < 0){
+                    target[target.length + index] = value
+            }else{
+                target[index] = value
             }
-        })
+            return true
+        }    
+    })
 }
+let newArr = negativeIndex(arr)
+console.log(newArr[-1])
 
-
- 
+newArr[-2] = 100// deep copy(both arrays are changed)
+console.log(newArr) 
+console.log(arr)
 
 
 
