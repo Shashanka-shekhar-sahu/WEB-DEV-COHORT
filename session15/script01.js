@@ -58,4 +58,3 @@ const proxyUser = new Proxy(user,{
 })
     //console.log(proxyUser.password) // throw new Error ('Access Denied')
    // proxyUser.password = 456  //You cannot set the password directly!
-     

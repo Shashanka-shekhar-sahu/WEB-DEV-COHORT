@@ -9,49 +9,69 @@
 
 <body>
    <!-- Example 01 -->
-   <button id="dark-mode">Dark Mode</button>
-   <button id="white-mode">White Mode</button>
+   <!-- Button to switch to dark mode -->
+<button id="dark-mode">Dark Mode</button>
+
+<!-- Button to switch to white mode -->
+<button id="white-mode">White Mode</button>
+
 
    <!-- Example 02 -->
-   <button id="plus">+</button>
-   <span id="show">0</span>
-   <button id="minus">-</button>
+<!-- Button to increase the counter -->
+<button id="plus">+</button>
+
+<!-- Span element to display the current counter value -->
+<span id="show">0</span>
+
+<!-- Button to decrease the counter -->
+<button id="minus">-</button>
+
 
    <!-- Example 03 -->
    <div>
+      <!-- Title of the To-Do List -->
       <h2>TO DO LIST</h2>
+      
+      <!-- Input field where users can type their to-do items -->
       <input type="text" id="addText" placeholder="write here">
+      
+      <!-- Button to add the input text to the list -->
       <button id="btn">add</button>
+      
+      <!-- Unordered list where added items will be displayed -->
       <ul id="saveText"></ul>
-   </div>
+  </div>
+  
 
 
    <!-- Example 04 -->
-   <button id="themeChange">dark mode</button>
+   <!-- Button to toggle between dark mode and light mode -->
+<button id="themeChange">dark mode</button>
+
 
 
    <!-- Example 05 -->
 
    <div class="card-body text-center">
       <div class="row">
-         <div class="col-6">
-            <button class="btn btn-success btn-md" id="likes-btn">Likes</button>
-            <h4 id="likes-display"></h4>
-         </div>
-         <div class="col-6">
-            <button class="btn btn-danger btn-md" id="dislikes-btn">DisLikes</button>
-            <h4 id="dislikes-display"></h4>
-         </div>
+          <!-- Likes Section -->
+          <div class="col-6">
+              <button class="btn btn-success btn-md" id="likes-btn">Likes</button>
+              <h4 id="likes-display"></h4>
+          </div>
+          <!-- Dislikes Section -->
+          <div class="col-6">
+              <button class="btn btn-danger btn-md" id="dislikes-btn">DisLikes</button>
+              <h4 id="dislikes-display"></h4>
+          </div>
       </div>
-   </div>
-   <div class="card-footer bg-warning text-white text-center">
+  </div>
+  
+  <!-- Footer displaying total count -->
+  <div class="card-footer bg-warning text-white text-center">
       <h3 id="total-display">Total:</h3>
-   </div>
- </div>
-   </div>
- </div>
-</div>
-
+  </div>
+  
 
 
    <script src="script01.js"></script>
