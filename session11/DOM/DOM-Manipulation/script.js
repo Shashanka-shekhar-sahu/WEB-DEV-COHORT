@@ -1,13 +1,10 @@
 // here having one attribute working only on one function  
-function blackMode(){
-    document.body.style.backgroundColor = 'black'
+// Function to switch the background color to black
+function blackMode() {
+    document.body.style.backgroundColor = 'black'; // Set the background color of the body to black
 }
 
-// Generic function
-function whiteMode(color){
-    document.body.style.backgroundColor = color
+// Generic function to switch the background color to a specified color
+function whiteMode(color) {
+    document.body.style.backgroundColor = color; // Set the background color of the body to the given color
 }
-
-
-
-

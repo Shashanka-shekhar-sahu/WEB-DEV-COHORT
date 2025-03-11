@@ -107,7 +107,3 @@ fsv2
 .then((content) => fsv2.writeFile('backup.txt', content))
 .then(() => fsv2.unlink('./hello.txt'))
 .catch((e) => console.error('Error:', e))
-
-
-
-

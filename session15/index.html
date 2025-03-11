@@ -2,30 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+   
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <title>Document</title>
+  
 </head>
 <body>
     <h2>How to fetch json data on browser</h2>
+    <!-- Displays a heading for the page -->
+
     <ul id="items"></ul>
+    <!-- An empty unordered list where fetched JSON data will be displayed -->
+
     <script>
-        function renderToScreen(obj){
-            const products = obj.data.data
-            console.log(products)
-                products.forEach((product) =>{
-                    const li = document.createElement('li')
-                    li.innerText = product.title
-                    items.appendChild(li)
-               })
+        function renderToScreen(obj) {
+            // Defines a function to render the fetched JSON data onto the webpage
+            const products = obj.data.data;
+            // Extracts the `data.data` property from the fetched object
+            console.log(products);
+            // Logs the fetched products to the console for debugging
+
+            products.forEach((product) => {
+                // Iterates over each product in the fetched data
+                const li = document.createElement('li');
+                // Creates a new <li> element for each product
+                li.innerText = product.title;
+                // Sets the inner text of the <li> element to the product title
+                items.appendChild(li);
+                // Appends the <li> element to the <ul> with id="items"
+                li.style.listStyleType = 'number';
+                // Changes the bullet style of the list item to numbers
+            });
         }
 
-
         fetch('https://api.freeapi.app/api/v1/public/randomproducts')
+        // Fetches data from the given API endpoint
         .then((response) => response.json())
+        // Parses the JSON response from the API
         .then(renderToScreen)
+        // Passes the parsed JSON data to the `renderToScreen` function
         .catch((err) => {})
+        // Catches any errors that occur during fetching but does nothing with them
         .finally(() => {})
-        renderToScreen()
+        // Executes this block after fetch is completed, regardless of success or failure
+
+        renderToScreen();
+        // Calls `renderToScreen` without any data (this will cause an error)
     </script>
 </body>
 </html>
